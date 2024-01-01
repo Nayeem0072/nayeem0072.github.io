@@ -1,0 +1,79 @@
+baseURL = "https://athul.github.io/archie/"
+languageCode = "en-us"
+title = "Nayeem Islam"
+theme = "archie"
+copyright = " © Nayeem"
+pygmentsstyle = "dracula"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+paginate = 4
+
+[params]
+favicon = "https://img.icons8.com/officel/16/000000/chevron-right.png"
+og_image = "https://raw.githubusercontent.com/athul/archie/master/images/archie-dark.png"
+# mode = "auto"
+mode = "toggle"
+useCDN = true
+subtitle = "*Welcome to My Blog*"
+description = "Blog and Personal Portfolio of Nayeem Islam"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/nayeem0072"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/nayeem-islam-b4b71612b/"
+
+[[params.social]]
+name = "Leetcode"
+icon = "code"
+url = "https://leetcode.com/inayeem/"
+
+[[params.social]]
+name = "Steam"
+icon = "tv"
+url = "https://steamcommunity.com/id/fenrir19/"
+
+# [[params.social]]
+# name = "Twitter"
+# icon = "twitter"
+# url = "https://github.com/athulcajay/"
+
+# [[params.social]]
+# name = "GitLab"
+# icon = "gitlab"
+# url = "https://gitlab.com/athul/"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "CV"
+url = "/resume"
+weight = 4
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 5
+
