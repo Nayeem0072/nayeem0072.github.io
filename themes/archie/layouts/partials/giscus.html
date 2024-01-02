@@ -1,0 +1,36 @@
+<div class="giscus giscus-area">
+    <br />
+    {{- if (eq (.Site.Params.disableComments | default false) false) -}}
+        {{- if (eq (.Params.disableComments | default false) false) -}}        
+        <script>
+            let theme = localStorage.getItem("theme-storage");
+            let giscusTheme = "light";
+            if (theme === "dark") {
+                giscusTheme = "dark";
+            }
+
+            let giscusAttributes = {
+              "src": "https://giscus.app/client.js",
+              "data-repo": "Nayeem0072/nayeem0072.github.io",
+              "data-repo-id": "R_kgDOK_rKeA",
+              "data-category": "General",
+              "data-category-id": "DIC_kwDOK_rKeM4CcJJn",
+              "data-strict" : "0",
+              "data-mapping": "pathname",
+              "data-reactions-enabled": "1",
+              "data-emit-metadata": "0",
+              "data-input-position" : "bottom",
+              "data-theme": giscusTheme,
+              "data-lang": "en",
+              "crossorigin": "anonymous",
+              "async": "",
+            };
+            
+            let giscusScript = document.createElement("script");
+            Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+            document.body.appendChild(giscusScript);
+          </script>
+
+        {{- end -}}
+    {{- end -}}
+</div>

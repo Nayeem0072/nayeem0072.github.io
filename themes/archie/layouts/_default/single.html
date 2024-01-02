@@ -16,10 +16,12 @@
 		</section>
 
 		<div class="post-tags">
+			<br />			
 			{{ if ne .Type "page" }}
 			{{ if gt .Params.tags 0 }}
 			<nav class="nav tags">
 				<ul class="tags">
+					<i>Tags</i>
 					{{ range .Params.tags }}
 					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
 					{{ end }}
@@ -27,7 +29,9 @@
 			</nav>
 			{{ end }}
 			{{ end }}
+			
 		</div>
+		{{ partial "giscus.html" . }}
 	</article>
 </main>
 {{ end }}
