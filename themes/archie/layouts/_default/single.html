@@ -31,7 +31,10 @@
 			{{ end }}
 			
 		</div>
+		{{ if isset .Params "non-blog" }}
+		{{ else }}
 		{{ partial "giscus.html" . }}
+		{{ end }}
 	</article>
 </main>
 {{ end }}

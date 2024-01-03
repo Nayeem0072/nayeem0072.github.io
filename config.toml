@@ -14,7 +14,7 @@ og_image = "https://raw.githubusercontent.com/athul/archie/master/images/archie-
 # mode = "auto"
 mode = "toggle"
 useCDN = true
-subtitle = "*Welcome to My Blog*"
+subtitle = "*Coding with Perspectives*"
 description = "Blog and Personal Portfolio of Nayeem Islam"
 disableComments = false
 
