@@ -3,11 +3,19 @@
 		<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	</div>
 	<nav>
+		{{ if .Site.Params.menuicons -}}
+		{{ range .Site.Menus.main }}
+		<!-- <a href="{{ .URL }}">{{ .Pre }}</a> -->
+		<a class="soc top" href="{{ .URL }}" title="{{ .Name }}"><i data-feather="{{ .Pre }}"></i></a>
+		{{ end }}
+		{{- else -}}
 		{{ range .Site.Menus.main }}
 		<a href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
+		{{ end }}
+
 		{{ if eq .Site.Params.mode "toggle" -}}
-        | <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+        | <a id="dark-mode-toggle" title="Switch Theme" onclick="toggleTheme()" href=""></a>
 		<script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
 		{{ end }}
 	</nav>
