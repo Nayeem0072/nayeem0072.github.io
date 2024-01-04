@@ -17,6 +17,7 @@ useCDN = true
 subtitle = "*Coding with Perspectives*"
 description = "Blog and Personal Portfolio of Nayeem Islam"
 disableComments = false
+menuicons = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -54,35 +55,42 @@ url = "https://steamcommunity.com/id/fenrir19/"
 [[menu.main]]
 name = "Home"
 url = "/"
+pre  = "home"
 weight = 1
 
 [[menu.main]]
 name = "Posts"
 url = "/posts"
+pre  = "file-text"
 weight = 2
 
 [[menu.main]]
 name = "Search"
 url = "/search"
+pre  = "search"
 weight = 3
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
+pre  = "tag"
 weight = 4
 
 [[menu.main]]
 name = "Projects"
 url = "/projects"
+pre  = "layers"
 weight = 5
 
 [[menu.main]]
 name = "CV"
 url = "/resume"
+pre  = "layout"
 weight = 6
 
 [[menu.main]]
 name = "About"
 url = "/about"
+pre  = "coffee"
 weight = 7
 

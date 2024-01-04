@@ -21,7 +21,7 @@ body{
 }
 
 ::selection {
-  background: var(--maincolor);
+  background: var(--bordercl);
   color: #fff;
 }
 

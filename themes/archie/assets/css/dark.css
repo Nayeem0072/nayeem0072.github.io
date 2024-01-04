@@ -10,7 +10,7 @@ body {
 }
 
 ::selection {
-  background: var(--darkMaincolor);
+  background: #009688;
   color: #fff;
   text-shadow: none;
 }
@@ -72,7 +72,7 @@ a {
   color: inherit;
 }
 a:hover {
-  background-color: var(--darkMaincolor);
+  background-color: #009688;
   color: black;
 }
 
