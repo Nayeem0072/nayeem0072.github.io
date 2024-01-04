@@ -336,8 +336,6 @@ input#search-query {
   outline: var(--maincolor);
 }
 
-.feather-search {
-  width: 18px;
-  height: 18px;
-  max-height: 48px;
+a.soc.top {
+  font-size: 20px;
 }
