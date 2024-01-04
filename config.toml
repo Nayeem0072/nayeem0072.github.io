@@ -1,4 +1,4 @@
-baseURL = "https://athul.github.io/archie/"
+baseURL = "https://nayeem0072.github.io/"
 languageCode = "en-us"
 title = "Nayeem Islam"
 theme = "archie"
@@ -17,6 +17,9 @@ useCDN = true
 subtitle = "*Coding with Perspectives*"
 description = "Blog and Personal Portfolio of Nayeem Islam"
 disableComments = false
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
 [[params.social]]
 name = "GitHub"
@@ -59,22 +62,27 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "Projects"
-url = "/projects"
-weight = 2
+name = "Search"
+url = "/search"
+weight = 3
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 3
+weight = 4
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 5
 
 [[menu.main]]
 name = "CV"
 url = "/resume"
-weight = 4
+weight = 6
 
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 5
+weight = 7
 

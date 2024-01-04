@@ -10,13 +10,13 @@ body {
 }
 
 ::selection {
-  background: red;
+  background: rgb(255 52 134);
   color: #fff;
   text-shadow: none;
 }
 
 hr {
-  border-top: 3px dotted rgb(0, 0, 212);
+  border-top: 3px dashed rgb(255 52 134);
 }
 code {
   background-color: lightblue;
@@ -156,4 +156,13 @@ a:hover {
   content: 'Markdown';
   background: royalblue;
   color: whitesmoke ;
+}
+input#search-query {
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid var(--darkMaincolor);
+  background: #212122;
+  caret-color: var(--darkMaincolor);
+  color: white;
+  outline: var(--darkMaincolor);
 }
