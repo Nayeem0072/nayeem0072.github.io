@@ -8,6 +8,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 paginate = 4
 
+
 [params]
 favicon = "https://img.icons8.com/officel/16/000000/chevron-right.png"
 og_image = "https://raw.githubusercontent.com/athul/archie/master/images/archie-dark.png"
@@ -18,6 +19,7 @@ subtitle = "*Coding with Perspectives*"
 description = "Blog and Personal Portfolio of Nayeem Islam"
 disableComments = false
 menuicons = true
+googleAnalytics = "G-MB506MVBGL"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]

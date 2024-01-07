@@ -58,4 +58,21 @@
 	<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
 	{{- end }}
 	{{- end }}
+
+	<!-- google analytics -->
+	{{ template "_internal/google_analytics.html" . }}
+	{{ template "_internal/google_analytics_async.html" . }}
+
+	{{ with site.Params.googleAnalytics }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+ 
+      gtag('config', '{{ . }}');
+    </script>
+	{{ end }}
+
+
 </head>
