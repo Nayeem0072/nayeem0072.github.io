@@ -8,6 +8,8 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 paginate = 4
 
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
 favicon = "https://img.icons8.com/color/code"
