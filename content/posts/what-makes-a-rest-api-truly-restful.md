@@ -1,6 +1,6 @@
 ---
 title: "What Makes a REST API Truly RESTful?"
-date: 2026-10-16T18:00:00+06:00
+date: 2026-10-16T16:00:00+06:00
 description: "Beyond HTTP verbs: REST constraints, common API design mistakes, and how to review a REST API"
 tags: [rest, api, http, spring-boot, backend, architecture]
 draft: false
