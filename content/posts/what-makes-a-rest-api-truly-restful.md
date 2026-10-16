@@ -296,19 +296,6 @@ One endpoint returns a string, another returns `{ "error": "..." }`, and another
 
 Returning database entities directly couples the API to the persistence model. Use explicit request and response DTOs, define compatibility expectations, and handle API evolution deliberately.
 
-## 5. How I'd assess a REST API in a code review
-
-For a Spring Boot + React project, I'd review these dimensions:
-
-- [ ] **Resource modeling** — Do URLs identify resources, and are relationships represented coherently?
-- [ ] **HTTP semantics** — Are methods, status codes, headers, and idempotency used correctly?
-- [ ] **Stateless interactions** — Can each request be understood and processed independently of hidden conversational context?
-- [ ] **Representations and errors** — Are DTOs, validation, content types, and error formats consistent?
-- [ ] **Security** — Are authentication, resource-level authorization, input validation, and sensitive data exposure handled correctly?
-- [ ] **Operational quality** — Are pagination, caching, rate limiting, observability, and retry behavior designed appropriately?
-- [ ] **Evolution and discoverability** — Are changes backward-compatible where required, and are API contracts documented?
-- [ ] **REST architectural fidelity** — Does the API implement the uniform interface, including hypermedia controls if claiming strict REST conformance?
-
 ## The bottom line
 
 I would separate two questions when evaluating an API:
@@ -317,5 +304,3 @@ I would separate two questions when evaluating an API:
 * **Is it strictly RESTful?** Does its architecture satisfy REST's constraints, especially the uniform interface and hypermedia-driven discoverability?
 
 Many production APIs do very well on the first question without satisfying every constraint of the second.
-
-My biggest practical takeaway: don't optimize for making URLs *look* RESTful. Optimize for making the API's behavior predictable, consistent, secure, and evolvable. Correct HTTP semantics are an essential starting point, but they are not the whole architecture.
